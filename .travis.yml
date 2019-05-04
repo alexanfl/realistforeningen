@@ -1,0 +1,21 @@
+language: go
+
+install:
+  - go get github.com/gohugoio/hugo
+
+before_script:
+  - rm -rf public
+
+script:
+  - hugo --minify
+
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: public
+  target-branch: master
+  repo: alexanfl/alexanfl.github.io
+  on:
+    branch: master
