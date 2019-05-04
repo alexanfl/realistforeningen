@@ -7,7 +7,7 @@ before_script:
   - rm -rf public
 
 script:
-  - hugo --minify
+  - hugo -t infinity-hugo
 
 
 deploy:
