@@ -1,4 +1,4 @@
-baseURL = "https://alexanfl.github.io/realistforeningen"
+baseURL = "https://alexanfl.github.io"
 languageCode = "en-us"
 title = "Realistforeningen"
 theme = "infinity-hugo"
